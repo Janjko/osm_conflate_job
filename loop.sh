@@ -15,5 +15,5 @@ trap 'sigterm' TERM
 
 while ${run}; do
   conflate /data/profile.py -o /data/josm.osm
-  sleep 1m
+  sleep ${PERIOD:-24h}
 done
